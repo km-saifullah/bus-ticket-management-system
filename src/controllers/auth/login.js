@@ -22,6 +22,8 @@ const login = async (req, res) => {
 
     const token = signToken(user._id)
     const loggedInUser = { user, token }
+    user.token = token
+    await user.save()
     return res
       .status(200)
       .json(apiResponse(200, 'user login done', loggedInUser))
