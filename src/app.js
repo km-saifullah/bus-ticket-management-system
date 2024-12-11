@@ -1,6 +1,6 @@
 import express from 'express'
 import authRouter from './routes/authRoutes.js'
-import userRouter from './routes/userRoutes.js'
+import busRouter from './routes/busRoutes.js'
 
 const app = express()
 
@@ -10,6 +10,6 @@ app.use(express.urlencoded({ extended: true }))
 
 // routes
 app.use('/api/v1/auth', authRouter)
-app.use('/api/v1/users', userRouter)
+app.use('/api/v1/buses', busRouter)
 
 export default app
