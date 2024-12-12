@@ -25,6 +25,10 @@ const ticketSchema = new Schema(
     price: {
       type: Number,
     },
+    isBooked: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 )

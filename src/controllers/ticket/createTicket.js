@@ -8,10 +8,8 @@ import { generateString } from '../../utils/generateString.js'
 const createTicket = async (req, res) => {
   try {
     const { bus, numberOfSeats, travelDate, travelTime } = req.body
-    console.log(numberOfSeats, typeof numberOfSeats)
 
     const busFound = await Bus.findById({ _id: bus })
-    console.log(busFound.totalSeat)
     if (!busFound) {
       return res.status(404).json(apiResponse(404, 'bus not found'))
     }
