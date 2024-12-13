@@ -45,3 +45,18 @@ npm run dev
 <img src="./public/images/er_diagram.png" height="300px" width="400px" />
 
 <a href="https://app.eraser.io/workspace/aJ9n2ZcZ9zroUQEgfkwN?origin=share&elements=ttzRzrT2KIr8_KcvV_YC8w" target="_blank">Full ER Diagram</a>
+
+### API endpoins
+
+- Create User -> http://localhost:8000/api/v1/auth/register
+- Login User -> http://localhost:8000/api/v1/auth/login
+- Logout User -> http://localhost:8000/api/v1/auth/logout
+- Create Bus -> http://localhost:8000/api/v1/buses
+- Update Bus -> http://localhost:8000/api/v1/buses/:id
+- Delete Bus -> http://localhost:8000/api/v1/buses/:id
+- All Available Buses -> http://localhost:8000/api/v1/buses?date=2024-12-16&time=10:00 PM
+- Create Ticket -> http://localhost:8000/api/v1/tickets
+- Update Ticket -> http://localhost:8000/api/v1/tickets/:id
+- Delete Ticket -> http://localhost:8000/api/v1/tickets/:id
+- Purchase Ticket -> http://localhost:8000/api/v1/tickets/purchase
+- All Available Tickets -> http://localhost:8000/api/v1/tickets?travelDate=2024-12-16&travelTime=11:00 PM
