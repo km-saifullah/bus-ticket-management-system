@@ -38,8 +38,10 @@ npm run dev
 
 ### API Documentation
 
-[Postman Documentation]()
+<a href="https://documenter.getpostman.com/view/16730068/2sAYHxnib5" target="_blank">Postman Documentation</a>
 
 ### Entity Relationship Diagram
 
-<a href="https://app.eraser.io/workspace/aJ9n2ZcZ9zroUQEgfkwN?origin=share&elements=ttzRzrT2KIr8_KcvV_YC8w" target="_blank">ER Diagram</a>
+<img src="./public/images/er_diagram.png" height="300px" width="400px" />
+
+<a href="https://app.eraser.io/workspace/aJ9n2ZcZ9zroUQEgfkwN?origin=share&elements=ttzRzrT2KIr8_KcvV_YC8w" target="_blank">Full ER Diagram</a>
