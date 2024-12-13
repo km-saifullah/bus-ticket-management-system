@@ -19,6 +19,6 @@ router
   .put(protectAuth, adminAuth, updateTicket)
   .delete(protectAuth, adminAuth, deleteTicket)
 
-router.route('/purchase').post(purchaseTicket)
+router.route('/purchase').post(protectAuth, purchaseTicket)
 
 export default router
