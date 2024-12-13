@@ -5,6 +5,7 @@ import createTicket from '../controllers/ticket/createTicket.js'
 import deleteTicket from '../controllers/ticket/deleteTicket.js'
 import updateTicket from '../controllers/ticket/updateTicket.js'
 import getAvailableTickets from '../controllers/ticket/getAvailableTickets.js'
+import purchaseTicket from '../controllers/ticket/purchaseTicket.js'
 
 const router = Router()
 
@@ -17,5 +18,7 @@ router
   .route('/:id')
   .put(protectAuth, adminAuth, updateTicket)
   .delete(protectAuth, adminAuth, deleteTicket)
+
+router.route('/purchase').post(purchaseTicket)
 
 export default router
